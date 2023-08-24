@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humaira-Developer Portfolio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,8 +16,9 @@
         }
 
         body {
-            background-color: rgb(3, 57, 57);
+            background-color: rgb(1, 31, 31);
             color: antiquewhite;
+            font-family: 'Poppins', sans-serif;
 
         }
 
@@ -88,7 +90,8 @@
             padding: 9px;
             background-color: cadetblue;
         }
-        .leftsection .buttons{
+
+        .leftsection .buttons {
             padding: 15px 0;
         }
 
@@ -99,6 +102,10 @@
         }
 
         .purple {
+            color: rgb(40, 145, 149);
+        }
+
+        #element {
             color: rgb(40, 145, 149);
         }
 
@@ -206,8 +213,9 @@
 
                 <div>I am currently a CSE Ungraduate</div>
                 <div>at Dr.APJ Abdul Kalam Technical University.</div>
-                <div>Proficient in</div>
-                <div>C, C++, Python, HTML .</div>
+                <div>Proficient in <span id="element"></span></div>
+
+
                 <div>Currently open to roles for Internships.</div>
                 <div class="buttons">
                     <button class="btn">Download Resume</button>
@@ -215,7 +223,7 @@
                 </div>
             </div>
             <div class="rightsection">
-                <img src="ui.jpg" alt="">
+                <img src="6944307.png " alt="">
             </div>
 
         </section>
@@ -281,6 +289,13 @@
 
         </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['C', 'C++', 'Python', 'HTML.'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
